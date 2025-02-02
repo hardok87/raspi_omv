@@ -1,0 +1,16 @@
+---
+services:
+  radarr:
+    image: lscr.io/linuxserver/radarr:latest
+    container_name: radarr
+    environment:
+      - PUID=${MY_PUID}
+      - PGID=${MY_PGID}
+      - TZ=${MY_TZ}
+    volumes:
+      - ${CONFIG_FOLDER}/radarr:/config
+      - ${DATA_FOLDER}/movies:/movies #optional
+      - ${DATA_FOLDER}/download:/downloads #optional
+    ports:
+      - 7878:7878
+    restart: unless-stopped
