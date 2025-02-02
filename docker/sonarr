@@ -10,7 +10,7 @@ services:
     volumes:
       - ${CONFIG_FOLDER}/sonarr:/config
       - ${DATA_FOLDER}/series:/tv #optional
-      - ${DATA_FOLDER}/download:/downloads #optional
+      - ${DOWNLOADS_FOLDER}:/downloads #optional
     ports:
       - 8989:8989
     restart: unless-stopped
