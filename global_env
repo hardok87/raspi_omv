@@ -1,0 +1,5 @@
+MY_PUID=1000
+MY_PGID=1000
+MY_TZ=Europe/Madrid
+CONFIG_FOLDER=/srv/dev-disk-by-uuid-34F48E56F48E1A6E/config
+DATA_FOLDER=/srv/dev-disk-by-uuid-34F48E56F48E1A6E/data
