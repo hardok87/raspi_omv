@@ -10,7 +10,7 @@ services:
     volumes:
       - ${CONFIG_FOLDER}/radarr:/config
       - ${DATA_FOLDER}/movies:/movies #optional
-      - ${DATA_FOLDER}/download:/downloads #optional
+      - ${DOWNLOADS_FOLDER}:/downloads #optional
     ports:
       - 7878:7878
     restart: unless-stopped
